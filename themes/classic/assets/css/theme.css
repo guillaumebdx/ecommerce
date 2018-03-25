@@ -12248,10 +12248,7 @@ li.product-flag:not(.discount):not(.on-sale)~li.product-flag {
         padding-right: 0!important
     }
 }
-.top-menu {
-	display:   flex;
-	flex-wrap: wrap;
-	}
+
 .category .dropdown-item {
 	font-weight: normal;
 	vertical-align: middle;
