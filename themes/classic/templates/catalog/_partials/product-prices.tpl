@@ -59,16 +59,19 @@
 
         {block name='product_unit_price'}
           {if $displayUnitPrice}
-            <p class="product-unit-price sub">{l s='(%unit_price%)' d='Shop.Theme.Catalog' sprintf=['%unit_price%' => $product.unit_price_full]}</p>
+            <p class="product-unit-price sub">{l s='(%unit_price%)' d='Shop.Theme.Catalog' sprintf=['%unit_price%' => $product.unit_price_full]} </p>
           {/if}
+                {if $configuration.display_taxes_label}
+                   {$product.labels.tax_long}
+                {/if}
         {/block}
       </div>
     {/block}
 
     {block name='product_without_taxes'}
-      {if $priceDisplay == 2}
+     {* commenté par Guillaume {if $priceDisplay == 2} *}
         <p class="product-without-taxes">{l s='%price% tax excl.' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]}</p>
-      {/if}
+     {* {/if} *}
     {/block}
 
     {block name='product_pack_price'}
@@ -90,9 +93,7 @@
     {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
 
     <div class="tax-shipping-delivery-label">
-      {if $configuration.display_taxes_label}
-        {$product.labels.tax_long}
-      {/if}
+
       {hook h='displayProductPriceBlock' product=$product type="price"}
       {hook h='displayProductPriceBlock' product=$product type="after_price"}
       {if $product.additional_delivery_times == 1}
