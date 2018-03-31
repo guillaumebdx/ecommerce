@@ -1,3 +1,7 @@
+{* detect if is mobile to choose to display subcategories menu *}
+{assign var=context value=Context::getContext()}
+
+
 {assign var=_counter value=0}
 {function name="menu" nodes=[] depth=0 parent=null}
     {if $nodes|count}
@@ -22,10 +26,13 @@
                 {/if}
                 {$node.label}
               </a>
-              {if $node.children|count}
-              <div {if $depth === 0} class="popover sub-menu js-sub-menu collapse"{else} class="collapse"{/if} id="top_sub_menu_{$_expand_id}">
-                {menu nodes=$node.children depth=$node.depth parent=$node}
-              </div>
+              {* if added by Guillaume *}
+              {if $context->isMobile()}
+                  {if $node.children|count}
+                  <div {if $depth === 0} class="popover sub-menu js-sub-menu collapse"{else} class="collapse"{/if} id="top_sub_menu_{$_expand_id}">
+                    {menu nodes=$node.children depth=$node.depth parent=$node}
+                  </div>
+                  {/if}
               {/if}
             </li>
         {/foreach}
