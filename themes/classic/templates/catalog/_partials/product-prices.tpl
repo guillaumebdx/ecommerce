@@ -58,11 +58,12 @@
         </div>
 
         {block name='product_unit_price'}
+
           {if $displayUnitPrice}
             <p class="product-unit-price sub">{l s='(%unit_price%)' d='Shop.Theme.Catalog' sprintf=['%unit_price%' => $product.unit_price_full]} </p>
           {/if}
                 {if $configuration.display_taxes_label}
-                   {$product.labels.tax_long}
+                   <span class="ttc">{$product.labels.tax_long}</span>
                 {/if}
         {/block}
       </div>
@@ -70,7 +71,9 @@
 
     {block name='product_without_taxes'}
      {* commenté par Guillaume {if $priceDisplay == 2} *}
-        <p class="product-without-taxes">{l s='%price% tax excl.' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]}</p>
+        <p class="product-without-taxes">
+          ( {l s='%price% tax excl.' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]} )
+        </p>
      {* {/if} *}
     {/block}
 

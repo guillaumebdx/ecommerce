@@ -375,6 +375,7 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: .5rem
+
 }
 
 p {
@@ -12258,4 +12259,18 @@ li.product-flag:not(.discount):not(.on-sale)~li.product-flag {
 	font-size: .7rem;
 	display: inline-block;
 	line-height: 1.25em;
+}
+.ttc {
+    font-size: .6rem;
+    padding-left: 5px;
+}
+.current-price {
+    font-size: 2rem;
+}
+.product-without-taxes {
+    color: #e59a97;
+}
+.h6 {
+    color:#009900;
+    font-weight: normal !important;
 }
