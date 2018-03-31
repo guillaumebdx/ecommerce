@@ -12278,6 +12278,21 @@ li.product-flag:not(.discount):not(.on-sale)~li.product-flag {
 background: #ECE9E6;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #F2f2f2, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #F2f2f2, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.category-sub-menu li {
 
+    width: 90%;
+    font-size: .6rem;
+}
+.block-categories .category-sub-menu li[data-depth="0"] > a {
+    font-weight: normal;
+    font-size: .6rem;
+}
+}
+.block-categories .category-sub-menu li[data-depth="1"] > a {
+    font-weight: normal;
 
+}
+.block-categories .category-sub-menu .category-sub-link {
+      font-size: .6rem;  
 }
