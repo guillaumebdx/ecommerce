@@ -136,6 +136,7 @@
                     <input class="product-refresh ps-hidden-by-js" name="refresh" type="submit" value="{l s='Refresh' d='Shop.Theme.Actions'}">
                   {/block}
                 </form>
+
               {/block}
 
             </div>

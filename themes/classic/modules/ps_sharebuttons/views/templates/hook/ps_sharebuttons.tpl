@@ -29,9 +29,17 @@
       <span>{l s='Share' d='Shop.Theme.Actions'}</span>
       <ul>
         {foreach from=$social_share_links item='social_share_link'}
-          <li class="{$social_share_link.class} icon-gray"><a href="{$social_share_link.url}" class="text-hide" title="{$social_share_link.label}" target="_blank">{$social_share_link.label}</a></li>
+          <li class="{$social_share_link.class} icon-gray"><a href="{$social_share_link.url}" class="text-hide" title="{$social_share_link.label}" target="_blank" class="text-hide">{$social_share_link.label}</a></li>
         {/foreach}
+              {* added by Guillaume HARARI *}
+      <li class="print icon-gray">
+
+        <a href="" onClick="window.print();return false" title="Imprimer"></a>
+
+      </li>
+
       </ul>
+
     </div>
   {/if}
 {/block}

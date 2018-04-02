@@ -10195,7 +10195,7 @@ body#checkout #footer {
 }
 
 .product-price {
-    color: #cf575c;
+    color: #b61b30;
     display: flex;
 }
 
@@ -12268,7 +12268,8 @@ li.product-flag:not(.discount):not(.on-sale)~li.product-flag {
     font-size: 2rem;
 }
 .product-without-taxes {
-    color: #e59a97;
+    color: #b61b30;
+    font-weight: bold;
 }
 .h6 {
     color:#009900;
@@ -12295,4 +12296,15 @@ background: linear-gradient(to left, #F2f2f2, #ECE9E6); /* W3C, IE 10+/ Edge, Fi
 }
 .block-categories .category-sub-menu .category-sub-link {
       font-size: .6rem;  
+}
+ul .print {
+
+    background-image: url(https://www.shareicon.net/data/128x128/2015/09/05/96082_printer_512x512.png);
+}
+ul .print:hover {
+
+}
+.htgh {
+    font-size: .6rem;
+    font-weight: normal;
 }

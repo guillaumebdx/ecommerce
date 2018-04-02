@@ -72,7 +72,7 @@
     {block name='product_without_taxes'}
      {* commenté par Guillaume {if $priceDisplay == 2} *}
         <p class="product-without-taxes">
-          ( {l s='%price% tax excl.' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]} )
+          ( {l s='%price% € <span class="htgh">HT</span> ' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]} ) 
         </p>
      {* {/if} *}
     {/block}
