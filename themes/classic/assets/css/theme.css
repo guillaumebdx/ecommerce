@@ -12308,3 +12308,13 @@ ul .print:hover {
     font-size: .6rem;
     font-weight: normal;
 }
+@media print
+{    
+    .noPrint
+    {
+        display: none !important;
+    }
+    .product-description {
+        width:800px;
+    }
+}

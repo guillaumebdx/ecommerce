@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if $product.show_price}
-  <div class="product-prices">
+  <div class="product-prices noPrint">
     {block name='product_discount'}
       {if $product.has_discount}
         <div class="product-discount">

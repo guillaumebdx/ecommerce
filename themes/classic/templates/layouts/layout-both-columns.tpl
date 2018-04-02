@@ -92,7 +92,7 @@
         {hook h="displayWrapperBottom"}
       </section>
 
-      <footer id="footer">
+      <footer id="footer" class="noPrint">
         {block name="footer"}
           {include file="_partials/footer.tpl"}
         {/block}

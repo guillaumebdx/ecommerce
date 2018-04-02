@@ -29,7 +29,7 @@
 {/block}
 
 {block name='header_nav'}
-  <nav class="header-nav">
+  <nav class="header-nav noPrint">
     <div class="container">
         <div class="row">
           <div class="hidden-sm-down">
