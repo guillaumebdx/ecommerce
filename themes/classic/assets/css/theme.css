@@ -12324,3 +12324,16 @@ ul .print:hover {
 .add-to-cart:hover {
     background-color: #04c819;
 }
+.badge {
+    background-color: #8f8f8f;
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 8px;
+}
+h1 .h1 {
+    margin-top: 10px;
+}
+.spaceGh {
+    height: 10px;
+}

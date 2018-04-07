@@ -78,6 +78,11 @@
         <div class="col-md-6">
           {block name='page_header_container'}
             {block name='page_header'}
+            <div>
+                <span class="refGh">Référence produit : </span>
+                <span class="badge"> {$product.reference_to_display}</span>
+            </div> 
+            <div class="spaceGh"></div>
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
