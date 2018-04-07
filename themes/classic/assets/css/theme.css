@@ -9491,7 +9491,7 @@ body#checkout #footer {
 .product-miniature .product-miniature .product-flags .new.discount-amount,
 .product-miniature .product-miniature .product-flags .new.discount-percentage {
     z-index: 2;
-    background: #f39d72
+    background: black
 }
 
 #products .product-miniature .discount-amount.on-sale,
@@ -9518,7 +9518,7 @@ body#checkout #footer {
 .product-miniature .product-miniature .online-only.on-sale,
 .product-miniature .product-miniature .pack.on-sale,
 .product-miniature .product-miniature .product-flags .new.on-sale {
-    background: #f39d72;
+    background: black;
     width: 100%;
     text-align: center;
     left: 0;
@@ -10382,11 +10382,11 @@ body#checkout #footer {
 
 .has-discount.product-price,
 .has-discount p {
-    color: #f39d72
+    color: black
 }
 
 .has-discount .discount {
-    background: #f39d72;
+    background: black;
     color: #fff;
     font-weight: 600;
     padding: .3125rem .625rem;
@@ -10803,7 +10803,7 @@ li.product-flag.discount {
 }
 
 li.product-flag.on-sale {
-    background: #f39d72;
+    background: black;
     width: 100%;
     text-align: center;
     margin: 0;
