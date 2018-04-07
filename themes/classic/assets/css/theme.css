@@ -12337,3 +12337,50 @@ h1 .h1 {
 .spaceGh {
     height: 10px;
 }
+.flex {
+    display: flex;
+
+}
+.leftHome {
+    width: 30%;
+    padding-top: 45px;
+    padding-right: 20px;
+}
+.card {
+    background-color: white;
+    height: 17%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    transition: .3s;
+}
+.devis {
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+}
+.env {
+    text-align: center;
+    font-size: 3em;
+    color: #009900;
+    padding: 15px;
+}
+.answer {
+    text-align: center;
+}
+
+.bigger {
+    height: 20%;
+}
+.stars {
+    text-align: center;
+    color: yellow;
+    padding: 15px;
+}
+.iconBrand {
+    height: 50px;
+}
+.brands {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
