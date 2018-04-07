@@ -23,7 +23,9 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
  {* added by Guillaume HARARI *}
-
+ {* detect if is mobile to choose to display subcategories menu *}
+{assign var=context value=Context::getContext()}
+{if $context->isMobile() === false}
 <div class="flex">
 <section class="leftHome">
   <a href="https://harari.io/gelcom/ecommerce/contact-us" class="hoverCard">
@@ -59,7 +61,7 @@
 
 
 </section>
-
+{/if}
 
 <section class="featured-products clearfix">
   <h2 class="h2 products-section-title text-uppercase">
@@ -74,5 +76,7 @@
     {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
   </a>
 </section>
+{if $context->isMobile() === false}
 </div>
+{/if}
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
