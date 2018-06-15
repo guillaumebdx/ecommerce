@@ -24,7 +24,7 @@
  *}
 {block name='product_miniature_item'}
   <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
-    <div class="thumbnail-container">
+    <div class="thumbnail-container" title="{$product.name}">
       {block name='product_thumbnail'}
         <a href="{$product.url}" class="thumbnail product-thumbnail">
           <img
@@ -38,9 +38,9 @@
       <div class="product-description">
         {block name='product_name'}
           {if $page.page_name == 'index'}
-            <h3 class="h3 product-title" title="{$product.name}" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
+            <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
           {else}
-            <h2 class="h3 product-title" title="{$product.name}" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
+            <h2 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
           {/if}
         {/block}
 
