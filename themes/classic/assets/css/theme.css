@@ -12393,3 +12393,15 @@ h1 .h1 {
     background-color: black;
     color: yellow;
 }
+#manufacturer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#manufacturer li {
+    background-color: white;
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
