@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='brand_miniature_item'}
-  <li class="brand">
+  <li class="brand li-brand">
     <div class="brand-infos">
       <p><a href="{$brand.url}">{$brand.name}</a></p>
       {$brand.text nofilter}

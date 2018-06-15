@@ -12397,7 +12397,7 @@ h1 .h1 {
     display: flex;
     flex-wrap: wrap;
 }
-#manufacturer li {
+#manufacturer .li-brand {
     background-color: white;
     width: 200px;
     height: 80px;
